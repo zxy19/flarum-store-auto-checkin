@@ -1,0 +1,80 @@
+.auto-checkin-coverment .before-em {
+    transform: scaleX(1);
+}
+
+.auto-checkin-coverment .after-em {
+    transform: scaleX(0);
+}
+
+.auto-checkin-coverment * {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.auto-checkin-working {
+    position: relative;
+}
+
+.auto-checkin-coverment {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: inherit;
+}
+
+.auto-checkin-coverment.flip .before-em {
+    transform: scaleX(0);
+    animation: flip-ani-1 3s cubic-bezier(0.58, 0, 0.74, 0.99);
+}
+
+.auto-checkin-coverment.flip .after-em {
+    transform: scaleX(1);
+    animation: flip-ani-2 3s cubic-bezier(0.58, 0, 0.74, 0.99);
+}
+
+@keyframes flip-ani-1 {
+    0% {
+        transform: scaleX(1);
+    }
+
+    25% {
+        transform: scaleX(1);
+    }
+
+    50% {
+        transform: scaleX(-1);
+    }
+
+    75% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+@keyframes flip-ani-2 {
+    0% {
+        transform: scaleX(0);
+    }
+
+    25% {
+        transform: scaleX(0);
+    }
+
+    50% {
+        transform: scaleX(0);
+    }
+
+    75% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
