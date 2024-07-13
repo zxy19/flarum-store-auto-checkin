@@ -8,8 +8,8 @@
     "license": "MIT",
     "require": {
         "flarum/core": "^1.2.0",
-        "xypp/store":"*",
-        "ziiven/flarum-daily-check-in":"*"
+        "xypp/store": "*",
+        "ziiven/flarum-daily-check-in": "*"
     },
     "authors": [
         {
@@ -26,11 +26,11 @@
     "extra": {
         "flarum-extension": {
             "title": "Store Auto Checkin",
-            "category": "",
+            "category": "feature",
             "icon": {
-                "name": "",
-                "color": "",
-                "backgroundColor": ""
+                "name": "fas fa-check-double",
+                "color": "#a5d6a7",
+                "backgroundColor": "#fff"
             }
         },
         "flarum-cli": {
