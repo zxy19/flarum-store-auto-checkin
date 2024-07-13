@@ -19,8 +19,7 @@ use Xypp\Store\PurchaseHistory;
 
 return [
     (new Extend\Frontend('forum'))
-        ->js(__DIR__ . '/js/dist/forum.js')
-        ->css(__DIR__ . '/less/forum.less'),
+        ->js(__DIR__ . '/js/dist/forum.js'),
     new Extend\Locales(__DIR__ . '/locale'),
     (new \Xypp\Store\Extend\StoreItemProvider())
         ->simple("auto-check-in", function (...$_) {

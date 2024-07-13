@@ -11,7 +11,7 @@ app.initializers.add('xypp/store-auto-checkin', () => {
       hasChecked = true;
       const canCheckin = app.session.user.attribute("canCheckin");
       if (canCheckin) {
-        UseHelper.get("auto-checkin").then(async e => e.filterAvailable().use(""))
+        UseHelper.get("auto-check-in").then(async e => e.filterAvailable().use(""))
           .then(() => $("#checkInButton").click());
       }
     }
